@@ -1,6 +1,5 @@
 package com.example.fails;
 
-import com.example.works.LazyObservationMethodInterceptor;
 import io.micrometer.observation.ObservationRegistry;
 
 import org.springframework.aop.Advisor;
@@ -15,8 +14,8 @@ import static org.springframework.beans.factory.config.BeanDefinition.ROLE_INFRA
 
 @Configuration
 @Import(AutoProxyRegistrar.class)
-public class InterceptorConfiguration {
-	private final ObservationMethodInterceptor interceptor = new ObservationMethodInterceptor();
+public class FailsInterceptorConfiguration {
+	private final FailsObservationMethodInterceptor interceptor = new FailsObservationMethodInterceptor();
 
 	@Bean
 	@Role(ROLE_INFRASTRUCTURE)

@@ -23,7 +23,7 @@ class WorksApplicationTests {
 		private final ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);
 
 		MockObservationHandlerConfig() {
-			given(handler.supportsContext(any())).willReturn(true);
+			given(this.handler.supportsContext(any())).willReturn(true);
 		}
 
 		@Bean

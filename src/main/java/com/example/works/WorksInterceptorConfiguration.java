@@ -11,8 +11,8 @@ import static org.springframework.beans.factory.config.BeanDefinition.ROLE_INFRA
 
 @Configuration
 @Import(AutoProxyRegistrar.class)
-public class LazyInterceptorConfiguration {
-	private final LazyObservationMethodInterceptor interceptor = new LazyObservationMethodInterceptor();
+public class WorksInterceptorConfiguration {
+	private final WorksObservationMethodInterceptor interceptor = new WorksObservationMethodInterceptor();
 
 	@Bean
 	@Role(ROLE_INFRASTRUCTURE)

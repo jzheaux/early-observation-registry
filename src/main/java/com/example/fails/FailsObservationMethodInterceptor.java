@@ -10,7 +10,7 @@ import org.springframework.aop.Pointcut;
 import org.springframework.aop.PointcutAdvisor;
 import org.springframework.aop.support.NameMatchMethodPointcut;
 
-public class ObservationMethodInterceptor implements MethodInterceptor, PointcutAdvisor {
+public class FailsObservationMethodInterceptor implements MethodInterceptor, PointcutAdvisor {
 	ObservationRegistry registry = ObservationRegistry.NOOP;
 
 	@Override
